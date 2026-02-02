@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<link rel="stylesheet" href="styles.css">
+
+  <title>IP Address Tracker</title>
+</head>
+
+<body>
+  <header>
+  <h1>IP Address Tracker</h1>
+
+  <div class="search-box">
+  <input type="text" placeholder="Search for any IP address or domain" class="js-input">
+
+  <button class="js-button">
+  <img src="images/icon-arrow.svg">
+  </button>
+  </div>
+  </header>
+  
+<section class="info">
+  <div class="info-item">
+    <h2>IP ADDRESS</h2>
+    <p class="js-ip"></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info-item">
+    <h2>LOCATION</h2>
+    <p class="js-location"></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info-item">
+    <h2>TIMEZONE</h2>
+    <p class="js-timezone"></p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="info-item">
+    <h2>ISP</h2>
+    <p class="js-isp"></p>
+  </div>
+</section>
+
+<div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+
